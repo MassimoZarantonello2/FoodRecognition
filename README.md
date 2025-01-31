@@ -1,4 +1,3 @@
-```markdown
 # Progetto FoodX_251
 
 ## Descrizione
@@ -57,7 +56,9 @@ Questo progetto si concentra sull'analisi e la creazione di modelli complessi pe
 
 Ecco un piccolo manuale di istruzioni su come usare la classe `EnsambleModel`, che puoi aggiungere al `README.md`:
 
-4. **Aggiornamento delle Immagini di Train e Allenamento Ciclico dell'Ensamble**
+4. **Grafici di training**: I grafici dei training dei modelli sono contenuti nella cartella `graphs/`.
+
+5. **Aggiornamento delle Immagini di Train e Allenamento Ciclico dell'Ensamble**
 
 Lo script `ensamble_image_increment.py` gestisce l'aggiornamento delle immagini di addestramento e l'allenamento ciclico dell'ensamble. Questo processo consiste nell'aggiungere progressivamente nuove immagini nel dataset di training, migliorando così l'accuratezza del modello nel tempo.
 
@@ -70,11 +71,9 @@ Per eseguire l'aggiornamento delle immagini di train e allenare l'ensamble in mo
 
 Esempio di esecuzione:
 
-```bash
-python ensamble_image_increment.py
-```
 
-```markdown
+python ensamble_image_increment.py
+
 ## Uso della classe `EnsambleModel`
 
 La classe `EnsambleModel` permette di creare un modello ensemble, allenare i modelli individuali e fare previsioni utilizzando il peso combinato di ciascun modello.
@@ -146,6 +145,3 @@ Se `pre_trained=True`, i modelli vengono caricati dai pesi pre-addestrati salvat
 ### Nota sui Modelli Rumorosi
 
 I file che terminano con `-1` fanno riferimento a modelli allenati su dati rumorosi. Se non si desidera usare i modelli rumorosi, è possibile omettere questi file dai pesi pre-addestrati.
-```
-
-4. **Grafici di training**: I grafici dei training dei modelli sono contenuti nella cartella `graphs/`.
